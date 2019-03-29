@@ -1,0 +1,182 @@
+*{
+	margin: 0;
+	word-wrap: break-word;
+	overflow-x: hidden;
+}
+
+p{
+	font-family: 'Questrial', sans-serif;
+}
+
+a.btn-link:hover {
+	color: #A30020;
+}
+
+a.btn-link{
+	color: white;
+}
+
+/*--------------------HEADER----------------------*/
+header{
+    width: 100%;
+	background-color: #5E0013;
+	position: relative;
+    top: 0;
+    display: block;
+}
+
+img.logo {
+    width: 10%;
+    position: absolute;
+}
+
+header h1{
+	font-family: 'Amatic SC', cursive;
+	color: #fff;
+	position: relative;
+	left: 10%;
+	font-size: 5em;
+	border-radius: 0%;
+	border-bottom: 1px solid #fff;
+	display: initial;
+
+}
+
+header h2 {
+	font-family: 'Barlow', sans-serif;
+	font-weight: lighter;
+	font-size: 1.5em;
+	color: #fff;
+	position: relative;
+	left: 15%;
+	width: 50%;
+	
+	
+}
+
+.Nav-Link{
+	position: relative;
+	left: 60%;
+	color: white;
+	font-family: 'Barlow', sans-serif;
+	font-size: 1.5em;
+	display: inline-block;
+	padding-right: 10px;
+	top: -2em;
+}
+
+.Lang{
+	color: rgb(255, 255, 255);
+	font-family: 'Barlow', sans-serif;
+	text-decoration: none;
+	font-size: 1.4;
+}
+
+
+/*------------------CONTAINER------------------*/
+
+.content{
+	padding: 20px;
+}
+
+/*----------------DERNIER ARTICLES----------------*/
+
+.article-title-index{
+	font-family: 'Questrial', sans-serif;
+	font-size: 1.4em;
+}
+
+/*--------------PRESENTATION---------------*/
+
+.present {
+	float: right;
+	width: 28%;
+	padding-bottom: 5%;
+}
+
+.present h3 {
+	padding-left: 0;
+}
+
+.img-pres {
+	max-width: 100%;
+}
+
+/*--------------CREE NOUVEL ARTICLE-------------*/
+
+.create {
+	clear: left;
+}
+
+.create h3 {
+	padding-left: 0
+}
+
+.create a.btn-link {
+	margin-top: -0.5%;
+}
+
+/*-------------FOOOTER----------------*/
+
+footer {
+	width: 100%;
+	background-color: #5E0013;
+	height: 80px;
+	position: relative;
+	bottom: 0;
+	display: block;
+
+}
+
+
+footer .social-media {
+	position: relative;
+	top: 50%;
+	left: 3%;
+	padding-right: 5px;
+	color: #fff;
+	font-family: 'Barlow', sans-serif;
+	display: initial;
+
+}
+
+footer .lieu {
+	position: relative;
+	top: 50%;
+	left: 20%;
+	color: #fff;
+	display: initial;
+}
+
+footer .droit {
+	position: relative;
+	top: 50%;
+	left: 40%;
+	display: initial;
+	color: #fff;
+	font-family: 'Barlow', sans-serif;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
