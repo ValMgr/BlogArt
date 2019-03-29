@@ -1,3 +1,6 @@
+<?php   include '@import/db_connection.php';
+    include '@import/connection_check.php'; ?>
+
 <!DOCTYPE html>
     <html lang="fr">
         <head>
@@ -7,15 +10,15 @@
 
         </head>
         <body>
-		<h1>
-			Tout les Articles
-		</h1>
 
+
+        <?php include '@import/header.php'; ?>
+
+        <div class="content">
 
 <?php
 
-    include '@import/db_connection.php';
-    include '@import/connection_check.php';
+  
 
 
     $requete = "SELECT * FROM ARTICLE";
@@ -29,24 +32,27 @@
                 //Ne me remercier pas si vous récuperer le code, c'est de bon coeur... cheh
 
     while($obj = $stmt->fetch()) {
-        ?> <h3> <?php echo($obj[2]); ?> </h3>
+        ?> <h3 class="article-title-index"> <?php echo($obj[2]); ?> </h3>
             <img src="<?php echo($obj[10]);?>" height="50px;" width="50px;">
-            <p> <?php echo($obj[3]); ?> </p>
+            <p class="chapo-index"> <?php echo($obj[3]); ?> </p>
 
             <form id="<?php echo($obj[0]);  ?>" action="Articles/show_article.php" method="post"> <input type="hidden" name="NumArt" value="<?php echo($obj[0]);  ?>"/> </form>
-            <a href='#' onclick='document.getElementById("<?php echo($obj[0]);  ?>").submit()'>Lire la suite --></a>
+            <a href='#' style="color:black;font-family: 'Questrial', sans-serif;" onclick='document.getElementById("<?php echo($obj[0]);  ?>").submit()'>Lire la suite --></a>
 
 
 <?php
     }
 
 ?>
-<br/>
-<br/>
-<br/>
-<br/>
+
 
 <a href="index.php">Index.php</a>
+
+
+</div>
+<?php include '@import/footer.php'; ?>
+
+
 
 </body>
 </html>
